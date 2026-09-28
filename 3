@@ -1,0 +1,38 @@
+dicionario = "qwertyuiopasdfghjklzxcvbnm"
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+senha = "marcelo"
+senha_criptografada = ""
+
+for letra in senha:
+    posicao = ord(letra) - ord("a")  # 0 até 25
+    senha_criptografada += dicionario[posicao]
+
+print(senha_criptografada)
+dicionario = "qwertyuiopasdfghjklzxcvbnm"
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+
+def codifica(senha):
+    senha_criptografada = ""
+    for letra in senha:
+        posicao = ord(letra) - ord("a")  # 0 até 25
+        senha_criptografada += dicionario[posicao]
+    return senha_criptografada
+
+senha = "marcelo"
+senha_criptografada = codifica(senha)
+print(senha_criptografada)-
+print(codifica(senha))
+# Ctrl + /
+senha = "marcelo123"
+if "a" <= letra <= "z":
+else:
+senha_criptografada += letra
+def codifica(senha):
+    senha_criptografada = ""
+    for letra in senha:
+        if "a" <= letra <= "z":
+            posicao = ord(letra) - ord("a") # 0 até 25
+            senha_criptografada += dicionario[posicao]
+        else:
+            senha_criptografada += letra
+    return senha_criptografada
