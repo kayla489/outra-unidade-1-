@@ -1,0 +1,19 @@
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+senha = "marcelo"
+for letra in alfabeto:
+    numero = ord(letra)
+    print(letra, numero)
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+senha = "marcelo"
+senha_criptografada = ""
+numero = ord(letra)  # 97 até 122
+dicionario = ""
+dicionario = "qwertyuiopasdfghjklzxcvbnm"
+numero = ord(letra) - ord("a")  # 0 até 25
+posicao = ord(letra) - ord("a")
+for letra in alfabeto:
+    posicao = ord(letra) - ord("a")
+    senha_criptografada += dicionario[posicao]
+print(letra, posicao)
+print(senha_criptografada)
+for letra in senha:
