@@ -1,0 +1,32 @@
+senhas_comuns = [
+    "123456",
+    "password",
+    "123456789",
+    "qwerty",    
+    "12345678",
+    "111111",
+    "12345",
+    "columbia",
+    "senha",
+    "iloveyou"
+]
+hashes_comuns = [
+    "123456",
+    "password",
+    "123456789",
+    "qwerty",    
+    "12345678",
+    "111111",
+    "12345",
+    "columbia",
+    "senha",
+    "iloveyou"
+]
+
+for senha in senhas_comuns:
+    hashes_comuns.append(calcula_hash(senha))
+    print(hashes_comuns)
+    import itertools
+    combinacoes = itertools.product([hash_cadastrado], hashes_comuns)
+    print(list(combinacoes))
+    
